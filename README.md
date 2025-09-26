@@ -14,5 +14,3 @@ This project includes a **backend API** (FastAPI) and a **frontend UI** (React) 
 
 ---
 
-## 📂 Project Structure
-
