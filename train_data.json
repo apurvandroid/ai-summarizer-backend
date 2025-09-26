@@ -1,0 +1,10 @@
+[
+  {
+    "input": "Your long text here",
+    "output": "Corrected summary"
+  },
+  {
+    "input": "The city council approved a new downtown park with playgrounds, walking trails, and community gardens. Construction starts next month and a public opening event is planned.\n",
+    "output": "A new downtown park with playgrounds, walking trails, and community gardens. Construction starts next month and a public opening event is planned."
+  },
+]

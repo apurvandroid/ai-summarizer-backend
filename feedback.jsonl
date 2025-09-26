@@ -1,0 +1,20 @@
+import json
+
+# Open the feedback log file for reading and a new JSON file for writing
+with open("logs/feedback.jsonl", "r") as f, open("train_data.json", "w") as out:
+    examples = []  # List to store cleaned training examples
+
+    # Iterate over each line (each JSON object) in the feedback log
+    for line in f:
+        obj = json.loads(line)  # Parse the JSON line into a Python dict
+        fb = obj.get("feedback", {})  # Extract the 'feedback' field
+
+        user_summary = fb.get("user_summary")  # Get the user's summary
+        if user_summary and user_summary.strip():  # Only include if non-empty
+            examples.append({
+                "input": fb.get("text", ""),       # Original text as input
+                "output": user_summary.strip()     # User-provided summary as output
+            })
+
+    # Write all collected examples to a JSON file with indentation for readability
+    json.dump(examples, out, indent=2)
