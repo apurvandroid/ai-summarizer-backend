@@ -8,7 +8,7 @@ This project includes a **backend API** (FastAPI) and a **frontend UI** (React) 
 ## 🧰 Tech Stack
 
 - **Backend:** Python, FastAPI  
-- **Frontend:** React (Optional, can be added later)  
+- **Frontend:** Android 
 - **AI Model:** Pretrained NLP summarization model (Hugging Face Transformers, T5/BART, or similar)  
 - **Database:** Optional (SQLite/PostgreSQL if needed)
 
